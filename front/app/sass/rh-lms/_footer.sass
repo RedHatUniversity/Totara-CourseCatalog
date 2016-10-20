@@ -1,0 +1,30 @@
+.footer-region
+  @extend %page-region-base
+  +background-cover-image('../img/footer-background.jpg')
+  padding: $base-line-height-double 0
+  margin-top: 4rem
+  h1, h2, h3, h4, h5, h6, p, a, li, td
+    color: #fff
+
+.footer-nav
+  ul
+    @extend %list-plain
+    li, a
+      @extend .small
+      color: #fff
+    li
+      margin-bottom: $base-line-height-half
+    &:last-of-type
+      margin-bottom: 0
+
+.footer-disclaimer
+  position: absolute
+  bottom: 0
+  right: 0
+  p
+    color: $grey-5
+
+.featured-container
+  display: table
+  margin: 0 auto
+  margin-top: 4rem

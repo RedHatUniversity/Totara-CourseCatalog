@@ -1,0 +1,12 @@
+node_modules
+.idea
+.sass-cache
+front/app/config.json
+front/www
+server/ssl
+
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes

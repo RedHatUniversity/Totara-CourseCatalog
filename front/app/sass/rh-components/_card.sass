@@ -1,0 +1,66 @@
+$card-icon-size: 8rem
+$card-horiz-width: 25rem
+$card-margin: 3rem
+
+.rh-card-container-horizontal
+  text-align: center
+
+.rh-card
+  width: $card-horiz-width
+  display: inline-block
+  vertical-align: top
+  min-height: 35rem
+  position: relative
+  margin-bottom: $base-line-height
+
+%rh-card-common
+  margin: 0
+  margin-right: $base-line-height
+  padding: 3rem
+  h1
+    @extend h3
+    margin-bottom: $base-line-height
+    padding: 0
+    font-weight: 600
+    color: #646464
+  p
+    margin-bottom: 0
+
+.rh-card-dark
+  @extend %rh-card-common
+  background: #252527
+  h1
+    color: #fff
+  p
+    color: #fff
+  .card-footer
+    a.cta
+      color: #fff
+
+.rh-card-light
+  @extend %rh-card-common
+  background: #fff
+
+.rh-card-header
+  margin: -3rem -3rem $base-line-height -3rem
+  padding: 1.5rem 3rem
+  text-align: center
+
+.rh-card-icon
+  width: $card-icon-size
+  height: $card-icon-size
+  margin-left: ($card-horiz-width / 2) - ($card-icon-size / 2) - 3rem
+  border-radius: $card-icon-size / 2
+  background: #c00
+  color: #fff
+  font-size: 3.4rem
+  font-weight: 300
+  line-height: $card-icon-size
+
+.rh-card-footer
+  margin: $base-line-height -3rem -3rem -3rem
+  padding: 1.5rem 3rem
+  text-align: center
+
+.rh-card-cta
+  margin-top: 4rem

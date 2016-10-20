@@ -1,0 +1,129 @@
+.header-region-home
+  @extend %page-region-base
+  +background-cover-image('../img/header-background.jpg')
+  height: auto
+
+.header-region
+  @extend %page-region-base
+  +background-cover-image('../img/header-background.jpg')
+  height: 19rem
+
+.header-user
+  height: 3rem
+  background: #fff
+  text-align: right
+  padding: 0 1.5rem
+  img
+    position: relative
+    top: -.1rem
+  .header-user-messages
+    padding-right: $base-line-height-half
+  .header-user-signout
+    padding-left: $base-line-height-half
+  p
+    @extend .small
+    display: inline
+    margin: 0
+    padding: 0
+    text-transform: uppercase
+    color: #646464
+    font-weight: 800
+    line-height: 3rem
+
+.header-title
+  height: 8rem
+  position: relative
+  overflow: hidden
+  h1
+    position: absolute
+    font-size: 2.6rem
+    left: 0
+    top: 0
+    padding: 0
+    margin: 0
+    line-height: 8rem
+    text-transform: uppercase
+  .header-title-logo
+    position: absolute
+    right: 0
+    top: 1.8rem
+
+.header-mainnavigation
+  position: relative
+  height: 5rem
+  background: rgba(255, 255, 255, .8)
+  padding-left: 1.5rem
+  ul
+    @extend %list-horizontal
+    li
+      margin-left: 0
+      margin-right: 2.5rem
+      line-height: 5rem
+      font-size: 1.6rem
+      font-weight: 600
+      &:last-of-type
+        margin-right: 0
+      &:before
+        content: ''
+        bottom: .8rem
+        height: .4rem
+        position: absolute
+        width: 3.2rem
+        background-color: $color-header
+  .header-search
+    background: #fff
+    position: absolute
+    right: 0
+    top: 0
+    width: 37rem
+    height: 5rem
+    padding: 0 1.5rem
+    overflow: hidden
+    p
+      line-height: 5rem
+      color: $red
+      margin: 0
+      padding: 0
+    img
+      position: absolute
+      top: 1.5rem
+      right: 1.5rem
+
+.header-mobilenavigation
+  display: none
+  overflow: hidden
+  position: relative
+  width: 100%
+  height: 4rem
+  background-color: $grey-11
+  padding: $base-line-height-half 1.5rem
+  margin-bottom: 1.5rem
+  p
+    color: #fff
+    margin: 0
+    padding: 0
+  .header-search-mobile
+    background: $grey-9
+    position: absolute
+    right: 0
+    top: 0
+    width: 28rem
+    height: 4rem
+    padding: 0 1.5rem
+    overflow: hidden
+    p
+      font-size: 1.4rem
+      font-weight: 800
+      line-height: 4rem
+      color: #fff
+      margin: 0
+      padding: 0
+    img
+      position: absolute
+      top: 1rem
+      right: 1.5rem
+
+.header-announcement
+  overflow: hidden
+  img
+    @extend %img-responsive
